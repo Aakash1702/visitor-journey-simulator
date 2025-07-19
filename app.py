@@ -6,6 +6,43 @@ import os
 from datetime import datetime
 import folium
 from streamlit_folium import st_folium
+from PIL import Image
+
+
+logo = Image.open("1740753183850.jpg")
+st.image(logo, width=200)
+
+st.markdown("<h1 style='color: #0094D8;'>Destination Cleveland: Visitor Journey Simulator</h1>", unsafe_allow_html=True)
+st.markdown("### Discover Cleveland through the eyes of every kind of visitor 🚶‍♀️🍽️🎭")
+
+st.markdown("""
+    <style>
+        .main {
+            background-color: #f9fcff;
+        }
+        .stApp {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            color: #0094D8;
+        }
+        .css-18e3th9 {
+            background-color: #ffffff;
+        }
+        .stButton > button {
+            background-color: #0094D8;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 8px 16px;
+        }
+        .stButton > button:hover {
+            background-color: #007bbf;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
 
 st.set_page_config(page_title="Visitor Journey Simulator", layout="wide")
 tab1, tab2 = st.tabs(["🚦 Visitor Simulator", "📊 Visitor Insights"])
@@ -168,6 +205,7 @@ with tab2:
         #     st.info("No submissions yet for heatmap.")
 
 
+        st.download_button("⬇️ Download Visitor Data", df.to_csv(index=False), "visitor_data.csv", "text/csv")
 
 
 
