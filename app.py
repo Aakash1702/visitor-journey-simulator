@@ -1,3 +1,4 @@
+#--------------------VERSION 3 ---------------------
 import streamlit as st
 import pandas as pd
 from wordcloud import WordCloud
@@ -8,8 +9,15 @@ import folium
 from streamlit_folium import st_folium
 from PIL import Image
 
+# ---- Configuration ----
+st.set_page_config(page_title="Visitor Journey Simulator", layout="wide")
 
-logo = Image.open("1740753183850.JPG")
+# ---- Session State for Authentication ----
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+# ---- App Header and Logo ----
+logo = Image.open("1740753183850.jpg")
 st.image(logo, width=200)
 
 st.markdown("<h1 style='color: #0094D8;'>Destination Cleveland: Visitor Journey Simulator</h1>", unsafe_allow_html=True)
@@ -42,21 +50,55 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# ---- Admin Credentials ----
+ADMIN_CREDENTIALS = {
+    "adminuser": "Cleveland2025!",
+    "karin": "DC2025rocks"
+}
 
+# ---- Admin Login Logic ----
+def login_section():
+    st.subheader("🔐 Admin Login")
+    with st.form("login_form"):
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        login_btn = st.form_submit_button("Login")
 
-st.set_page_config(page_title="Visitor Journey Simulator", layout="wide")
-tab1, tab2 = st.tabs(["🚦 Visitor Simulator", "📊 Visitor Insights"])
+        if login_btn:
+            if username in ADMIN_CREDENTIALS and ADMIN_CREDENTIALS[username] == password:
+                st.session_state.authenticated = True
+                st.rerun()
+            else:
+                st.error("❌ Invalid credentials")
 
-with tab1:
+# ---- Visitor Simulator Page ----
+def visitor_simulator():
     st.title("🗺️ Visitor Journey Simulator – Cleveland Edition")
 
-    # --- 1. Persona
+    # Initialize session variable
+    if "show_login" not in st.session_state:
+        st.session_state.show_login = False
+
+    # Admin login logic
+    if not st.session_state.authenticated and not st.session_state.show_login:
+        if st.button("🔐 Admin Login"):
+            st.session_state.show_login = True
+            st.rerun()
+
+    if st.session_state.show_login and not st.session_state.authenticated:
+        login_section()
+        return
+
+    # Reset login state after successful login
+    if st.session_state.authenticated and st.session_state.show_login:
+        st.session_state.show_login = False
+
+    # Persona Selection
     st.header("👤 Select Your Visitor Persona")
     persona = st.radio("What best describes you?", [
         "First-time Tourist", "Food Lover", "Arts & Culture Fan", "Family Traveler", "Budget Explorer"
     ])
 
-    # --- 2. Journey Stops
     st.header("📍 Your Suggested Journey")
     journey_stops = {
         "First-time Tourist": ["West Side Market", "Rock & Roll Hall of Fame", "Edgewater Park", "East 4th Street Dining"],
@@ -66,10 +108,6 @@ with tab1:
         "Budget Explorer": ["Public Square", "Cleveland Public Library", "Edgewater Park", "Little Italy Walk"]
     }
 
-    for stop in journey_stops[persona]:
-        st.write(f"- {stop}")
-
-    # --- 3. Map
     location_coords = {
         "West Side Market": (41.4841, -81.7038),
         "Rock & Roll Hall of Fame": (41.5080, -81.6954),
@@ -90,6 +128,9 @@ with tab1:
         "Little Italy Walk": (41.5098, -81.5985)
     }
 
+    for stop in journey_stops[persona]:
+        st.write(f"- {stop}")
+
     stops = journey_stops[persona]
     journey_map = folium.Map(location=location_coords[stops[0]], zoom_start=13)
     points = []
@@ -102,7 +143,7 @@ with tab1:
         folium.PolyLine(points, color="blue", weight=3).add_to(journey_map)
     st_folium(journey_map, width=750, height=500)
 
-    # --- 4. Form
+    # Form
     st.header("📝 Help Us Improve Cleveland Experiences")
     with st.form("visitor_form"):
         zip_code = st.text_input("ZIP Code")
@@ -130,25 +171,18 @@ with tab1:
         write_headers = not os.path.exists("visitor_logs.csv")
         df.to_csv("visitor_logs.csv", mode="a", index=False, header=write_headers)
         st.success("✅ Submission recorded.")
-
-        # 🔄 Force rerun to clear form inputs
         st.rerun()
 
-
-    # Optional log view
-    if st.checkbox("📂 Preview Submitted Logs"):
-        try:
-            logs = pd.read_csv("visitor_logs.csv")
-            st.dataframe(logs.tail(5))
-        except Exception as e:
-            st.warning(f"Error loading file: {e}")
-
-# ---- 5. DASHBOARD TAB ----
-with tab2:
+# ---- Dashboard Page ----
+if st.session_state.authenticated:
     st.header("📊 Visitor Insights Dashboard")
+    if st.button("🚪 Logout"):
+        st.session_state.authenticated = False
+        st.session_state.show_login = False
+        st.rerun()
+
     try:
         df = pd.read_csv("visitor_logs.csv")
-        st.write("✅ Columns found:", df.columns.tolist())  # Debug
         df['Timestamp'] = pd.to_datetime(df['Timestamp'])
 
         st.subheader("👤 Most Selected Visitor Personas")
@@ -164,9 +198,7 @@ with tab2:
         st.subheader("🧭 Recent ZIP Codes (Last 5)")
         st.write(df[['ZIP', 'Reason', 'Duration']].tail(5))
 
-        # Word Cloud of Favorite Experiences
         st.subheader("🧡 What Visitors Enjoy Most (Word Cloud)")
-
         fav_text = " ".join(df["Liked Most"].dropna().astype(str))
         if fav_text.strip():
             wordcloud = WordCloud(width=800, height=300, background_color='white').generate(fav_text)
@@ -177,38 +209,20 @@ with tab2:
         else:
             st.info("No favorite experience data yet.")
 
-        # Trip Duration
         st.subheader("⏳ Trip Duration Breakdown")
-        duration_counts = df['Duration'].value_counts()
-        st.bar_chart(duration_counts)
+        st.bar_chart(df['Duration'].value_counts())
 
         st.subheader("👥 Who Do Visitors Travel With?")
-        companion_counts = df['Companion'].value_counts()
-        st.bar_chart(companion_counts)
+        st.bar_chart(df['Companion'].value_counts())
 
         st.subheader("😕 Common Pain Points (Least Liked Experiences)")
-        least_liked_counts = df["Liked Least"].dropna().str.lower().value_counts().head(10)
-        st.write(least_liked_counts)
-
-        # import seaborn as sns
-
-        # st.subheader("📆 Daily Submissions Heatmap")
-        # df["Date"] = pd.to_datetime(df["Timestamp"]).dt.date
-        # daily_counts = df.groupby("Date")["Email"].count().reset_index(name="Submissions")
-
-        # if not daily_counts.empty:
-        #     fig, ax = plt.subplots()
-        #     heatmap_data = daily_counts.pivot_table(index="Date", values="Submissions").astype(int)
-        #     sns.heatmap(data=heatmap_data, annot=True, fmt="d", cmap="Blues", ax=ax)
-        #     st.pyplot(fig)
-        # else:
-        #     st.info("No submissions yet for heatmap.")
-
+        st.write(df["Liked Least"].dropna().str.lower().value_counts().head(10))
 
         st.download_button("⬇️ Download Visitor Data", df.to_csv(index=False), "visitor_data.csv", "text/csv")
 
-
-
-
     except Exception as e:
         st.warning(f"No data found yet. Submit a journey first! ({e})")
+
+# ---- Launch App ----
+if not st.session_state.authenticated:
+    visitor_simulator()
