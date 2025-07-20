@@ -1,0 +1,101 @@
+Timestamp,Persona,ZIP,Reason,Duration,Companion,Liked Most,Liked Least,Email
+2025-06-24 04:56:16,Budget Explorer,44101,Other,1–2 days,Friends,Rock & Roll Hall of Fame,Limited nightlife,user807@example.com
+2025-07-06 04:56:16,Food Lover,44105,Visiting Family,3–5 days,Group Tour,Edgewater Park,Parking,user912@example.com
+2025-07-10 04:56:16,Family Traveler,44106,Other,1 week or more,Group Tour,Edgewater Park,Crowds,user133@example.com
+2025-06-27 04:56:16,Budget Explorer,44105,Visiting Family,3–5 days,Solo,Playhouse Square,Construction,user358@example.com
+2025-06-28 04:56:16,Family Traveler,44101,Event/Festival,1–2 days,Partner,Severance Hall,Crowds,user815@example.com
+2025-07-05 04:56:16,Budget Explorer,44101,Other,1–2 days,Group Tour,West Side Market,Public transport,user857@example.com
+2025-07-03 04:56:16,Family Traveler,44105,Visiting Family,Day trip,Group Tour,Rock & Roll Hall of Fame,Limited nightlife,user804@example.com
+2025-07-14 04:56:16,Arts & Culture Fan,44107,Business,1–2 days,Family,West Side Market,Weather,user15@example.com
+2025-06-24 04:56:16,First-time Tourist,44106,Event/Festival,3–5 days,Partner,Lucky's Cafe,Public transport,user669@example.com
+2025-07-15 04:56:16,Food Lover,44105,Leisure,1–2 days,Partner,Playhouse Square,Limited nightlife,user109@example.com
+2025-07-05 04:56:16,Arts & Culture Fan,44101,Leisure,1–2 days,Friends,West Side Market,Public transport,user159@example.com
+2025-06-27 04:56:16,Food Lover,44101,Business,Day trip,Group Tour,Edgewater Park,Public transport,user761@example.com
+2025-07-06 04:56:16,Budget Explorer,44103,Business,3–5 days,Family,West Side Market,Weather,user277@example.com
+2025-07-20 04:56:16,Arts & Culture Fan,44107,Other,Day trip,Solo,Severance Hall,Crowds,user266@example.com
+2025-07-08 04:56:16,Food Lover,44101,Event/Festival,Day trip,Family,Cleveland Museum of Art,Limited nightlife,user780@example.com
+2025-06-22 04:56:16,Food Lover,44101,Leisure,1–2 days,Group Tour,West Side Market,Public transport,user177@example.com
+2025-07-11 04:56:16,Budget Explorer,44101,Business,1–2 days,Family,Rock & Roll Hall of Fame,Limited nightlife,user430@example.com
+2025-06-28 04:56:16,Arts & Culture Fan,44105,Leisure,1 week or more,Family,Cleveland Museum of Art,Crowds,user488@example.com
+2025-07-17 04:56:16,First-time Tourist,44107,Business,1 week or more,Partner,Edgewater Park,High prices,user314@example.com
+2025-06-21 04:56:16,Family Traveler,44104,Other,1–2 days,Group Tour,Cleveland Museum of Art,Weather,user57@example.com
+2025-07-07 04:56:16,Budget Explorer,44102,Event/Festival,Day trip,Friends,Edgewater Park,Parking,user726@example.com
+2025-07-16 04:56:16,Family Traveler,44103,Visiting Family,1–2 days,Solo,Playhouse Square,Parking,user294@example.com
+2025-06-23 04:56:16,Family Traveler,44107,Leisure,3–5 days,Family,Rock & Roll Hall of Fame,Parking,user115@example.com
+2025-06-25 04:56:16,Arts & Culture Fan,44101,Visiting Family,3–5 days,Friends,Rock & Roll Hall of Fame,Limited nightlife,user588@example.com
+2025-07-03 04:56:16,Arts & Culture Fan,44106,Event/Festival,1–2 days,Partner,Severance Hall,Limited nightlife,user922@example.com
+2025-07-05 04:56:16,Food Lover,44103,Event/Festival,1–2 days,Solo,Severance Hall,Public transport,user651@example.com
+2025-06-27 04:56:16,Budget Explorer,44104,Visiting Family,3–5 days,Solo,West Side Market,Weather,user335@example.com
+2025-07-03 04:56:16,Budget Explorer,44105,Leisure,1–2 days,Friends,Edgewater Park,Construction,user131@example.com
+2025-07-02 04:56:16,Budget Explorer,44106,Event/Festival,1–2 days,Partner,Edgewater Park,High prices,user531@example.com
+2025-07-13 04:56:16,Food Lover,44107,Business,1–2 days,Family,Lucky's Cafe,Construction,user646@example.com
+2025-07-11 04:56:16,Family Traveler,44107,Business,Day trip,Partner,Edgewater Park,Limited nightlife,user638@example.com
+2025-07-14 04:56:16,Budget Explorer,44104,Visiting Family,1 week or more,Friends,Severance Hall,Limited nightlife,user805@example.com
+2025-07-04 04:56:16,Family Traveler,44101,Event/Festival,3–5 days,Solo,West Side Market,Weather,user762@example.com
+2025-06-29 04:56:16,Family Traveler,44106,Event/Festival,1 week or more,Friends,Cleveland Museum of Art,Parking,user203@example.com
+2025-07-10 04:56:16,Food Lover,44101,Business,3–5 days,Friends,Lucky's Cafe,Public transport,user384@example.com
+2025-07-19 04:56:16,Family Traveler,44105,Business,Day trip,Family,Playhouse Square,Parking,user265@example.com
+2025-06-22 04:56:16,Food Lover,44105,Event/Festival,1–2 days,Friends,Edgewater Park,Limited nightlife,user741@example.com
+2025-07-18 04:56:16,First-time Tourist,44107,Other,1–2 days,Partner,Lucky's Cafe,Crowds,user692@example.com
+2025-07-03 04:56:16,Budget Explorer,44102,Visiting Family,1–2 days,Friends,Severance Hall,Limited nightlife,user467@example.com
+2025-07-20 04:56:16,Food Lover,44105,Other,1 week or more,Family,Lucky's Cafe,High prices,user902@example.com
+2025-07-17 04:56:16,Budget Explorer,44102,Business,3–5 days,Solo,Playhouse Square,Public transport,user882@example.com
+2025-07-20 04:56:16,First-time Tourist,44103,Event/Festival,1–2 days,Friends,Lucky's Cafe,Crowds,user728@example.com
+2025-06-20 04:56:16,Budget Explorer,44106,Business,1–2 days,Partner,Edgewater Park,Crowds,user668@example.com
+2025-07-11 04:56:16,Food Lover,44102,Leisure,1 week or more,Group Tour,West Side Market,Crowds,user466@example.com
+2025-06-28 04:56:16,Family Traveler,44106,Event/Festival,3–5 days,Group Tour,Cleveland Museum of Art,Parking,user890@example.com
+2025-07-02 04:56:16,Food Lover,44106,Event/Festival,1 week or more,Partner,Edgewater Park,Parking,user606@example.com
+2025-07-03 04:56:16,Family Traveler,44106,Visiting Family,1–2 days,Group Tour,Rock & Roll Hall of Fame,Parking,user827@example.com
+2025-06-25 04:56:16,First-time Tourist,44107,Visiting Family,1–2 days,Solo,West Side Market,Crowds,user338@example.com
+2025-07-02 04:56:16,Food Lover,44106,Visiting Family,1 week or more,Partner,Edgewater Park,High prices,user645@example.com
+2025-06-28 04:56:16,First-time Tourist,44101,Leisure,3–5 days,Family,Rock & Roll Hall of Fame,Parking,user468@example.com
+2025-06-25 04:56:16,Family Traveler,44101,Business,1–2 days,Partner,Cleveland Museum of Art,Public transport,user286@example.com
+2025-07-12 04:56:16,Budget Explorer,44106,Other,1–2 days,Family,Cleveland Museum of Art,Weather,user537@example.com
+2025-06-23 04:56:16,Budget Explorer,44103,Event/Festival,1–2 days,Group Tour,Cleveland Museum of Art,Parking,user79@example.com
+2025-07-08 04:56:16,Food Lover,44104,Visiting Family,1 week or more,Solo,Severance Hall,Crowds,user551@example.com
+2025-06-28 04:56:16,Budget Explorer,44101,Business,Day trip,Family,Edgewater Park,Construction,user499@example.com
+2025-07-11 04:56:16,First-time Tourist,44104,Visiting Family,1–2 days,Friends,Edgewater Park,Construction,user899@example.com
+2025-07-18 04:56:16,Arts & Culture Fan,44105,Event/Festival,1–2 days,Group Tour,West Side Market,Crowds,user511@example.com
+2025-07-15 04:56:16,Budget Explorer,44101,Leisure,1 week or more,Solo,West Side Market,Crowds,user978@example.com
+2025-06-22 04:56:16,Arts & Culture Fan,44107,Business,1 week or more,Solo,Cleveland Museum of Art,Construction,user111@example.com
+2025-06-28 04:56:16,First-time Tourist,44101,Other,Day trip,Family,Edgewater Park,Weather,user8@example.com
+2025-07-14 04:56:16,First-time Tourist,44105,Other,3–5 days,Friends,Edgewater Park,Construction,user190@example.com
+2025-07-15 04:56:16,Arts & Culture Fan,44104,Leisure,3–5 days,Friends,Edgewater Park,Limited nightlife,user667@example.com
+2025-06-30 04:56:16,First-time Tourist,44101,Other,1 week or more,Friends,Cleveland Museum of Art,Weather,user927@example.com
+2025-07-14 04:56:16,Food Lover,44104,Business,3–5 days,Friends,Cleveland Museum of Art,Public transport,user315@example.com
+2025-07-15 04:56:16,Budget Explorer,44107,Other,1 week or more,Friends,Cleveland Museum of Art,High prices,user725@example.com
+2025-07-08 04:56:16,First-time Tourist,44106,Leisure,3–5 days,Family,Playhouse Square,Construction,user801@example.com
+2025-06-27 04:56:16,Arts & Culture Fan,44107,Other,1 week or more,Group Tour,Edgewater Park,Crowds,user475@example.com
+2025-06-25 04:56:16,Family Traveler,44107,Business,1–2 days,Solo,Playhouse Square,Weather,user366@example.com
+2025-07-08 04:56:16,Arts & Culture Fan,44102,Other,3–5 days,Solo,Edgewater Park,Construction,user920@example.com
+2025-07-14 04:56:16,Budget Explorer,44101,Leisure,1–2 days,Group Tour,Cleveland Museum of Art,Limited nightlife,user880@example.com
+2025-06-20 04:56:16,Food Lover,44105,Event/Festival,1–2 days,Group Tour,Lucky's Cafe,High prices,user338@example.com
+2025-06-28 04:56:16,First-time Tourist,44106,Leisure,1–2 days,Solo,Rock & Roll Hall of Fame,Construction,user648@example.com
+2025-06-24 04:56:16,Family Traveler,44106,Event/Festival,3–5 days,Group Tour,Lucky's Cafe,Weather,user280@example.com
+2025-06-26 04:56:16,Budget Explorer,44102,Visiting Family,3–5 days,Friends,Edgewater Park,High prices,user321@example.com
+2025-06-30 04:56:16,First-time Tourist,44107,Visiting Family,3–5 days,Family,West Side Market,High prices,user266@example.com
+2025-07-18 04:56:16,Family Traveler,44107,Leisure,1–2 days,Friends,Lucky's Cafe,Parking,user286@example.com
+2025-07-13 04:56:16,Family Traveler,44107,Visiting Family,Day trip,Partner,Rock & Roll Hall of Fame,Public transport,user525@example.com
+2025-07-10 04:56:16,Family Traveler,44102,Visiting Family,1 week or more,Solo,Edgewater Park,Construction,user997@example.com
+2025-06-23 04:56:16,Budget Explorer,44104,Other,Day trip,Partner,Lucky's Cafe,Construction,user875@example.com
+2025-07-01 04:56:16,Food Lover,44105,Other,1 week or more,Partner,Edgewater Park,High prices,user638@example.com
+2025-07-02 04:56:16,Budget Explorer,44102,Leisure,3–5 days,Group Tour,Cleveland Museum of Art,Public transport,user751@example.com
+2025-07-02 04:56:16,Family Traveler,44107,Event/Festival,1 week or more,Group Tour,Rock & Roll Hall of Fame,Parking,user419@example.com
+2025-06-30 04:56:16,Arts & Culture Fan,44107,Leisure,Day trip,Solo,Playhouse Square,Crowds,user947@example.com
+2025-06-21 04:56:16,Family Traveler,44101,Business,Day trip,Partner,Cleveland Museum of Art,Construction,user907@example.com
+2025-07-20 04:56:16,Food Lover,44106,Other,1–2 days,Solo,West Side Market,Limited nightlife,user715@example.com
+2025-06-28 04:56:16,Family Traveler,44104,Other,3–5 days,Partner,Lucky's Cafe,Parking,user430@example.com
+2025-07-09 04:56:16,Family Traveler,44104,Visiting Family,Day trip,Solo,Edgewater Park,Weather,user476@example.com
+2025-07-07 04:56:16,Arts & Culture Fan,44106,Visiting Family,1–2 days,Partner,Lucky's Cafe,Limited nightlife,user489@example.com
+2025-07-02 04:56:16,First-time Tourist,44106,Business,Day trip,Friends,West Side Market,Crowds,user594@example.com
+2025-07-05 04:56:16,Food Lover,44102,Event/Festival,1–2 days,Group Tour,Playhouse Square,High prices,user106@example.com
+2025-07-10 04:56:16,Arts & Culture Fan,44105,Visiting Family,1–2 days,Group Tour,Cleveland Museum of Art,Parking,user959@example.com
+2025-07-05 04:56:16,Arts & Culture Fan,44107,Leisure,Day trip,Friends,Lucky's Cafe,High prices,user232@example.com
+2025-06-20 04:56:16,Arts & Culture Fan,44102,Other,Day trip,Partner,Severance Hall,Crowds,user798@example.com
+2025-06-20 04:56:16,Food Lover,44104,Leisure,1–2 days,Partner,Edgewater Park,Limited nightlife,user538@example.com
+2025-07-20 04:56:16,Budget Explorer,44103,Visiting Family,3–5 days,Family,Cleveland Museum of Art,Public transport,user835@example.com
+2025-06-26 04:56:16,Family Traveler,44102,Other,1–2 days,Group Tour,Rock & Roll Hall of Fame,Weather,user243@example.com
+2025-07-11 04:56:16,Budget Explorer,44105,Other,1 week or more,Group Tour,Rock & Roll Hall of Fame,Weather,user534@example.com
+2025-06-23 04:56:16,Budget Explorer,44105,Business,1 week or more,Family,Lucky's Cafe,Construction,user452@example.com
+2025-07-18 04:56:16,Food Lover,44104,Visiting Family,3–5 days,Solo,Cleveland Museum of Art,Public transport,user140@example.com
+2025-07-19 04:56:16,First-time Tourist,44107,Event/Festival,1–2 days,Partner,West Side Market,High prices,user314@example.com
