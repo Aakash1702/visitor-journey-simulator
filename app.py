@@ -111,7 +111,8 @@ def visitor_simulator():
     location_coords = {
         "West Side Market": (41.4841, -81.7038),
         "Rock & Roll Hall of Fame": (41.5080, -81.6954),
-        "Edgewater Park": (41.4946, -81.7482),
+        # "Edgewater Park": (41.4946, -81.7482),
+        "Edgewater Park": (41.49047441346552, -81.73545520292721),
         "East 4th Street Dining": (41.4993, -81.6892),
         "Momocho": (41.4899, -81.7031),
         "Lucky's Cafe": (41.4780, -81.6901),
