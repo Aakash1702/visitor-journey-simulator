@@ -86,7 +86,7 @@ def visitor_simulator():
         return
 
     # Header and logo
-    logo = Image.open("1740753183850.jpg")
+    logo = Image.open("1740753183850.JPG")
     st.image(logo, width=200)
     st.markdown("<h1 style='color: #0094D8;'>Destination Cleveland: Visitor Journey Simulator</h1>", unsafe_allow_html=True)
     st.markdown("### Discover Cleveland through the eyes of every kind of visitor 🚶‍♀️🍽️🎭")
